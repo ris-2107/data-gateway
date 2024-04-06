@@ -13,10 +13,10 @@ echo "Please enter the port number and service name when prompted.\n"
 read -p "Enter port number: " port
 read -p "Enter service name: " service_name
 
-echo "Stopping the existing container..."
+echo "\nStopping the existing container..."
 docker stop $service_name
 
-echo "Removing the existing container..."
+echo "\nRemoving the existing container..."
 docker rm $service_name >/dev/null 2>&1
 
 # Upgrade Gradle wrapper
