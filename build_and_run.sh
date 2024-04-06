@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Set execute permissions for the script
+chmod +x "$0"
+
 # Pull the latest changes from the Git repository
 git pull origin master
 
